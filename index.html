@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UFC Stats</title>
+    <link rel="stylesheet" href="mystyles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script> <!--3rd PARTY-->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/d3-simple-slider"></script> <!--3rd PARTY-->
+    <script src="myscript.js"></script>
+</head>
+
+
+<body>
+
+    
+
+    <form>
+        <label for="events">Select an event:</label>
+        <select id="events"></select>
+        <label for="bouts">Select a bout:</label>
+        <select id="bouts"></select>
+    </form>
+      
+    <div id="panel"></div>
+
+    <div id="list-container">
+        <div id="visuals"></div>
+        <div id="visuals2"></div>
+    </div> 
+    
+    <div class="tooltip" style="display: none;"></div>
+
+    <div id="svg-container">
+        <svg id="chart" width="600" height="500"></svg>
+    </div>
+
+    <div id ="data-reload">
+    <button id="reload-button">Reload Data</button>
+    </div>
+
+    <div id ="text-fighter">Fighter Totals</div>
+
+    <div id="fighter-container">
+
+        <div id="red-button">
+            <div class="red-fighter-text"></div>
+        </div>
+
+        <div id="blue-button">
+            <div class="blue-fighter-text"></div>
+        </div>
+
+    </div>
+
+    <div id="text-container">
+        <div id="metric">
+            Significant Strikes
+            <div id="ss-metric">
+
+            </div>
+        </div>
+        <div id="metric">
+            Control Time
+            <div id="ct-metric">
+                
+            </div>
+        </div>
+        <div id="metric">
+            Submission Attempts
+            <div id="sa-metric">
+                
+            </div>
+        </div>
+        <div id="metric">
+            Takedowns
+            <div id="td-metric">
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="icons-container">
+        <div id="striking"></div>
+        <div id="control"></div>
+        <div id="jiujitsu"></div>
+        <div id="wrestling"></div>
+    </div>
+
+    <div id="slider-heading"></div>
+
+    <div id="slider-styling">
+        <div id="value"></div>
+        <div id="slider"></div>
+    </div>
+
+    <div id="viz_container">
+    </div>
+
+    <div id="rec-damage">Damage Recieved By Fighters</div>
+
+    <div id ="data-reload2">
+        <button id="reload-button2">Load Data</button>
+    </div>
+
+    <div id="damage-lists">
+        
+        <div id="blue-listed-damage-rec"></div>
+        <div id="red-listed-damage-rec"></div>
+
+    </div>
+    
+    <div id="damage-map">
+        
+        <div id="red-damage-rec"></div>
+        <div id="blue-damage-rec"></div>
+
+    </div>
+
+
+    <div id="visuals3"></div>
+
+      
+        
+</body>
+</html>

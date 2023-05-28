@@ -1,0 +1,443 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+  
+label {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+select {
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+}
+
+#events{
+    margin-bottom: 10px;
+}
+
+#bouts{
+    margin-bottom: 10px;
+}
+
+#panel {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px; 
+    font-size: 16px; 
+    
+  }
+  
+  .division {
+    text-align: center; 
+    font-weight: bold;
+    font-size: 20px; 
+    padding-top: 50px;
+  }
+  
+  .method {
+    text-align: center; 
+    margin-top: 10px;
+    font-size: 18px; 
+    background-image: url("icons/ring-girl.svg");
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: center top; 
+    padding-top: 100px; 
+  }
+  
+  .round-time {
+    text-align: center; 
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .fighters {
+    margin-top: 10px; 
+    display: flex; 
+    justify-content: space-around;
+  }
+  
+  .red-fighter, .blue-fighter {
+    font-size: 25px; 
+    opacity: 0.8; 
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .red-fighter{
+    color: #e21212;
+  }
+
+  .blue-fighter{
+    color: #000dc7;
+  }
+  
+  .winner {
+    font-weight: bold; 
+    opacity: 1;
+    background-image: url("icons/gold-winner.svg");
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: center top; 
+    padding-top: 100px;
+  }
+
+  .loser {
+    margin-top: 100px; 
+  }
+
+#list-container{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}  
+
+#visuals {
+  margin-right: 100px;
+  margin-left: 120px;
+  }
+
+#visuals2 {
+  margin-left: 100px;
+  margin-right: 100px;
+  }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0 auto; 
+}
+
+#svg-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#visuals3{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 12px;
+  pointer-events: none;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#fighter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  text-align: center;
+}
+
+#red-button,
+#blue-button {
+  margin: 10px;
+  font-size: 18px;
+  background-repeat: no-repeat;
+  background-size: 180px;
+  background-position: center top; 
+  padding-top: 180px;
+  text-align: center;
+  width: 120px;
+  padding-right: 75px;
+}
+
+#red-button.selected,
+#blue-button.selected,
+#red-button:hover,
+#blue-button:hover {
+  width: 150px; 
+  padding-right: 100px; 
+  background-size: 280px;
+}
+
+.blue-fighter-text,
+.red-fighter-text {
+  width: 180px;
+  padding-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.blue-fighter-text.selected,
+.red-fighter-text.selected {
+  width: 200px;
+  padding-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 20px;
+}
+
+#text-fighter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 180px;
+  text-align: center;
+  padding-left: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  text-align: center;
+  padding-left: 75px;
+}
+
+#text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  text-align: center;
+}
+
+#metric{
+  margin: 10px;
+  font-size: 18px;
+  padding-top: 40px;
+  text-align: center;
+  width: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#red-button {
+  background-image: url("icons/red-fighter.svg");
+}
+
+#blue-button {
+  background-image: url("icons/blue-fighter.svg");
+}
+
+#striking,
+#control,
+#jiujitsu,
+#wrestling {
+  margin: 10px;
+  font-size: 18px;
+  background-repeat: no-repeat;
+  background-size: 120px;
+  padding-top: 100px;
+  text-align: center;
+  width: 120px;
+  padding-right: 75px;
+}
+
+#striking {
+  background-image: url("icons/striking.svg");
+}
+
+#control {
+  background-image: url("icons/control.svg");
+}
+
+#jiujitsu {
+  background-image: url("icons/jiujitsu.svg");
+}
+
+#wrestling {
+  background-image: url("icons/wrestling.svg");
+}
+
+#data-reload{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 24px;
+}
+
+#reload-button{
+  font-weight: bold;
+}
+
+#ss-metric,
+#ct-metric ,
+#sa-metric ,
+#td-metric{
+  padding-top: 15px;
+  font-size: 25px;
+}
+
+#round-performance{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding-top: 55px;
+  text-align: center;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#radar-containment{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  padding-top: 25px;
+}
+
+
+#viz_container {
+  width: 75%;
+  height: 75%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 80px;
+  padding-left: 230px;
+  padding-bottom: 150px;
+}
+
+#slider-styling{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 35px;
+  padding-left: 105px;
+}
+
+#slider-heading{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 115px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#damage-map {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 70px;
+  /* padding-left: 450px; */
+}
+
+#red-damage-rec{
+
+  background-image: url("icons/red-body.svg");
+
+}
+
+#blue-damage-rec {
+
+  background-image: url("icons/blue-body.svg");
+
+}
+
+#red-damage-rec{
+  position: relative;
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-size: 650px;
+  padding-top: 100px;
+  text-align: center;
+  /* width: 20px; */
+  /* padding-right: 250px;
+  padding-left: 300px; */
+  padding-right: 650px;
+  padding-bottom: 450px;
+}
+
+#blue-damage-rec {
+  position: relative;
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-size: 650px;
+  padding-top: 100px;
+  text-align: center;
+  /* width: 20px; */
+  /* padding-right: 750px; */
+  padding-right: 650px;
+  padding-bottom: 450px;
+}
+
+#blue-listed-damage-rec,
+#red-listed-damage-rec{
+  font-size: 15px;
+  width: 10%;
+  height: 10%;
+
+}
+
+#blue-listed-damage-rec{
+  display: block;
+  margin-inline-start: 120px;
+}
+
+#red-listed-damage-rec{
+  display: block;
+  margin-inline-start: 480px;
+}
+
+#damage-lists {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#rec-damage {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  padding-bottom: 65px;
+  font-weight: bolder;
+}
+
+#data-reload2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 20px;
+}
+
+#reload-button2{
+  font-weight: bold;
+}
