@@ -32,5 +32,5 @@ Showing damaged sustained by both fighters throughout the bout.
 
 ## Video Demonstration
 
-https://github.com/SLong97/UFC-Stats-Data-Visualisation-Assignment/assets/91565384/63956f6f-3b75-4f40-8b03-cfa39787a668
+https://github.com/SLong97/UFC-Stats-Data-Visualisation-Assignment/assets/91565384/93510dc1-4ef7-4b10-a397-bf75df7807b7
 
